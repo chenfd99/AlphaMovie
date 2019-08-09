@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H e l l o W o r l d !"
+            android:textSize="150sp"
+            android:textColor="#E01A1A"
+            android:gravity="center"
+    />
+
+    <com.chenfd.alphamovie.AlphaMovieView
+            android:id="@+id/alphaMovie"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+
+    <android.support.v7.widget.AppCompatSeekBar
+            android:id="@+id/seekBar"
+            android:progress="50"
+            android:max="100"
+            android:layout_above="@id/startButton"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:layout_alignParentBottom="true"
+            android:text="START"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/startButton"/>
+
+</RelativeLayout>
